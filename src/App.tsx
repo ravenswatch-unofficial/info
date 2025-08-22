@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <main className="homepage">
+      <section className="intro">
+        <h1>Ravenswatch</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          <strong>Ravenswatch</strong> is a cooperative roguelike developed by
+          Passtech Games and published by Nacon. Players embody heroes inspired
+          by folklore and legends as they fight against the Nightmares corrupting
+          the world.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+        <h2>About This Website</h2>
+        <p>
+          This is an <strong>unofficial fan-made website</strong> dedicated to
+          providing information, guides, and resources about Ravenswatch. It is
+          not affiliated with Passtech Games or Nacon.
+        </p>
+
+        <a
+          href="https://store.steampowered.com/app/2071280/Ravenswatch/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta"
+        >
+          View Ravenswatch on Steam
+        </a>
+      </section>
+    </main>
+  );
 }
 
-export default App
+export default App;
